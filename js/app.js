@@ -54,5 +54,19 @@ function isEven(number) {
 
 
 
+//3.Stabiliamo se la somma dei due numeri è pari o dispari  e comunichiamo all’utente chi ha vinto.
 
+const result = isEven(sum) ? "pari" : "dispari";
+
+
+if (result === scelta) {
+  console.log(`Hai scelto ${scelta}, il tuo numero è ${numero} e il numero del computer è ${numeroRandom}. La somma è ${sum}, quindi hai vinto!`);
+} else {
+  console.log(`Hai scelto ${scelta}, il tuo numero è ${numero} e il numero del computer è ${numeroRandom}. La somma è ${sum}, quindi hai perso.`);
+}
+
+
+//4. Stampiamo nella pagina il risultato 
+let risultatoWord = (result === scelta) ? `Hai scelto ${scelta}, il tuo numero è ${numero} e il numero del computer è ${numeroRandom}. La somma è ${sum}, quindi hai vinto!` : `Hai scelto ${scelta}, il tuo numero è ${numero} e il numero del computer è ${numeroRandom}. La somma è ${sum}, quindi hai perso.`
+document.getElementById("risultatoWord").innerHTML = risultatoWord;
 
