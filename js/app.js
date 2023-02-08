@@ -9,7 +9,14 @@ let userWord = prompt("Inserisci una parola:")
 
 //2.Creare una funzione per capire se la parola inserita è palindroma
 
-
+function isPalindrome(word) {
+    for (let i = 0; i < word.length / 2; i++) {
+      if (word[i] !== word[word.length - 1 - i]) {
+        return false;
+      }
+    }
+    return true;
+  }
 
 
 //3.Comunicare all’utente  se la parola che ha inserito è palindroma oppure no
