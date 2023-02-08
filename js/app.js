@@ -21,6 +21,15 @@ function isPalindrome(word) {
 
 //3.Comunicare all’utente  se la parola che ha inserito è palindroma oppure no
 
+if (isPalindrome(userWord)) {
+    console.log("La parola che hai inserito è palindroma.");
+  } else {
+    console.log("La parola che hai inserito non è palindroma.");
+  }
+
+//4. Lo comunichiamo anche nella pagina
+let risultato = isPalindrome(userWord) ? "La parola che hai inserito è palindroma." : "La parola che hai inserito non è palindroma.";
+document.getElementById("risultato").innerHTML = risultato;
 
 
 
