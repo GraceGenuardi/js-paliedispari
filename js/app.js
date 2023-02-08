@@ -4,12 +4,17 @@ console.log ('Palidroma')
 
 //1.Chiedere all’utente di inserire una parola
 
+let userWord = prompt("Inserisci una parola:")
 
 
 //2.Creare una funzione per capire se la parola inserita è palindroma
 
 
+
+
 //3.Comunicare all’utente  se la parola che ha inserito è palindroma oppure no
+
+
 
 
 
